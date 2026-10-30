@@ -266,6 +266,14 @@ footer .wrap{position:relative;padding:90px 0 30px}
 .linha-passos span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--papel);border:1px solid var(--ouro-claro);font:italic 400 15px var(--serif);color:var(--ouro-esc)}
 .linha-passos h3{font-size:25px;margin:20px 0 8px}
 .linha-passos p{color:var(--cinza);font-size:15px;max-width:22em;margin:0 auto}
+/* mapa */
+.mapa{position:relative;padding:0;height:460px;overflow:hidden}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.85) sepia(.18) contrast(.95)}
+.mapa .wrap{position:relative;height:100%;display:flex;align-items:center;justify-content:flex-end;pointer-events:none}
+.mapa-card{pointer-events:auto;background:var(--papel);border-radius:8px;padding:36px 34px;max-width:360px;box-shadow:0 30px 60px -30px rgba(38,48,31,.45)}
+.mapa-card h3{font-size:28px;margin:8px 0 10px}
+.mapa-card p{color:var(--cinza);font-size:15px;margin-bottom:22px}
+@media (max-width:560px){.mapa{height:auto;display:flex;flex-direction:column-reverse}.mapa iframe{position:relative;height:300px}.mapa .wrap{padding:30px 0}.mapa-card{box-shadow:none;padding:0;background:none}}
 @media (max-width:1000px){
   .cab-linha{flex-direction:column;align-items:start}
   .colunas{grid-template-columns:1fr}
@@ -557,6 +565,18 @@ footer .wrap{position:relative;padding:90px 0 30px}
       </form>
     </div>
   </section>
+  <section class="mapa" id="localizacao">
+    <iframe title="Mapa: Alto da Conquista, Olinda" src="https://www.google.com/maps?q=Alto+da+Conquista,+Olinda+-+PE&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="wrap">
+      <div class="mapa-card rv">
+        <p class="eyebrow">Localização</p>
+        <h3>Alto da Conquista, Olinda</h3>
+        <p>O endereço completo vai na confirmação do seu horário.</p>
+        <a class="btn btn-verde" href="https://www.google.com/maps/search/?api=1&query=Alto+da+Conquista,+Olinda+-+PE" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
