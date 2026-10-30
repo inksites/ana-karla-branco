@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Ana Karla Branco | Suplementação, Acupuntura e Estética Regenerativa em Olinda</title>
+<meta name="description" content="Biomédica acupunturista e fisioterapeuta no Alto da Conquista, Olinda. Suplementação nutricional injetável e oral, acupuntura e estética regenerativa, sempre com avaliação individual.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#EFE7DA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23F6F0E6'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23A07C45'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#EFE7DA; --marfim:#F8F4EC; --papel:#FBF8F3; --ouro:#A07C45; --ouro-esc:#7A5C2E; --ouro-claro:#D4B57E;
+  --salvia:#6E7F62; --salvia-clara:#DCE1D3; --verde:#26301F; --tinta:#2A2620; --cinza:#5C574F; --linha:rgba(42,38,32,.12);
+  --serif:'Libre Bodoni',Georgia,serif; --sans:'Poppins',system-ui,sans-serif; --script:'Pinyon Script',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--papel);color:var(--tinta);font:400 16px/1.75 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:min(1240px,100% - 56px);margin-inline:auto}
+.eyebrow{font:400 15px/1.4 var(--sans);color:var(--salvia);letter-spacing:.02em}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(38px,4.6vw,60px)}
+h2 em,h1 em{font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:15px 30px;border-radius:4px;font:400 15px/1 var(--sans);letter-spacing:.02em;transition:background .25s,color .25s,transform .25s}
+.btn-verde{background:var(--salvia);color:#fff}
+.btn-verde:hover{background:#5A6B4F}
+.btn-claro{background:#fff;color:var(--salvia)}
+.btn svg{width:16px;height:16px;transition:transform .25s}
+.btn:hover svg{transform:translateX(4px)}
+
+/* topo */
+.topo{position:absolute;inset:0 0 auto;z-index:30}
+.topo.fixo{position:fixed;background:rgba(248,244,236,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--linha);animation:desce .35s ease}
+@keyframes desce{from{transform:translateY(-100%)}}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
+.topo.fixo .wrap{height:72px}
+.topo.fixo .marca img{display:none}
+.marca{display:flex;flex-direction:column;align-items:center;line-height:1}
+.marca img{width:44px;height:auto;margin-bottom:4px}
+.marca b{font:500 19px/1 var(--serif);color:var(--ouro-esc);letter-spacing:.04em}
+.marca small{font:400 8.5px/1 var(--sans);letter-spacing:.42em;text-transform:uppercase;color:var(--ouro);margin-top:6px}
+.menu{display:flex;gap:36px;margin-left:70px;margin-right:auto;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--salvia);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+.menu a:hover::after{transform:scaleX(1);transform-origin:left}
+
+/* capa */
+.capa{position:relative;min-height:min(92vh,860px);display:flex;align-items:center;overflow:hidden;
+  background:#E7DFD2 url(assets/capa-fundo.jpg) center/cover no-repeat;
+  clip-path:ellipse(140% 100% at 50% 0%)}
+.capa::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(242,235,224,.9) 0%,rgba(242,235,224,.62) 40%,rgba(242,235,224,.12) 70%,rgba(242,235,224,.2) 100%);z-index:1}
+.capa .sombra{position:absolute;inset:-10%;z-index:1;pointer-events:none;opacity:.55;mix-blend-mode:multiply;
+  background:
+    radial-gradient(ellipse 18% 40% at 12% 30%,rgba(90,80,60,.18),transparent 70%),
+    radial-gradient(ellipse 10% 30% at 22% 60%,rgba(90,80,60,.14),transparent 70%);
+  filter:blur(18px);animation:balanca 12s ease-in-out infinite alternate}
+@keyframes balanca{to{transform:translate(2%,1.5%) rotate(1.5deg)}}
+.capa .wrap{position:relative;z-index:3;padding:150px 0 110px}
+.capa .texto{max-width:620px}
+.capa h1{font-size:clamp(42px,4.8vw,70px);margin:18px 0 26px;color:var(--tinta)}
+.capa h1 em{color:var(--ouro-esc)}
+.capa .lede{font-size:17px;max-width:30em;color:#4E483F}
+.capa .acoes{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.capa .pessoa{position:absolute;z-index:2;right:0;bottom:0;height:110%;width:48%;filter:drop-shadow(-30px 20px 40px rgba(90,70,40,.18));
+  -webkit-mask-image:linear-gradient(90deg,transparent 4%,#000 26%),linear-gradient(0deg,transparent 0%,#000 12%);
+  -webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 4%,#000 26%),linear-gradient(0deg,transparent 0%,#000 12%);mask-composite:intersect}
+.capa .pessoa img{width:100%;height:100%;object-fit:contain;object-position:100% 100%;transform:scale(1.04);transform-origin:50% 100%;transition:transform 2s cubic-bezier(.2,.7,.2,1)}
+.capa.pronta .pessoa img{transform:scale(1)}
+.capa .folha{position:absolute;z-index:3;right:-40px;top:60px;width:260px;opacity:.9;pointer-events:none;transform-origin:80% 20%;animation:folha 7s ease-in-out infinite alternate}
+@keyframes folha{to{transform:rotate(-4deg)}}
+
+/* selos */
+.selos{padding:46px 0;border-bottom:1px solid var(--linha)}
+.selos .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.selos div{display:flex;align-items:center;gap:14px;font-size:14px;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza)}
+.selos svg{flex:none;width:30px;height:30px;color:var(--salvia)}
+
+section{padding:120px 0}
+
+/* atendimentos (cards escalonados) */
+.atend{position:relative;background:var(--creme);overflow:hidden;padding:130px 0 170px}
+.atend .ondas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.atend .wrap{position:relative;display:grid;grid-template-columns:.8fr 1.6fr;gap:60px;align-items:start}
+.atend .intro{padding-top:60px}
+.atend .intro p{margin:22px 0 34px;color:var(--cinza)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;display:block;border-radius:12px;overflow:hidden;aspect-ratio:3/4.6;box-shadow:0 30px 60px -30px rgba(38,48,31,.45)}
+.card:nth-child(2){margin-top:70px}
+.card:nth-child(3){margin-top:140px}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.06)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,16,0) 35%,rgba(20,24,16,.78) 100%)}
+.card .rot{position:absolute;z-index:1;left:0;right:0;bottom:0;padding:26px 22px;color:#fff;text-align:center}
+.card h3{font-size:25px;margin-bottom:8px}
+.card p{font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.86)}
+
+/* detalhe: blocos editoriais */
+.bloco{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.bloco .img{position:relative;overflow:hidden}
+.bloco .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bloco .txt{display:flex;flex-direction:column;justify-content:center;padding:90px clamp(30px,6vw,100px)}
+.bloco.inv .img{order:2}
+.bloco .txt p{color:var(--cinza);margin-top:20px;max-width:32em}
+.bloco .num{font:italic 400 15px var(--serif);color:var(--ouro);margin-bottom:10px}
+.lista{margin-top:26px;border-top:1px solid var(--linha)}
+.lista li{list-style:none;display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--linha);font-size:16px}
+.lista li span{color:var(--cinza);font-size:14px;text-align:right}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tags li{list-style:none;padding:7px 15px;border-radius:999px;background:var(--salvia-clara);color:#3E4A36;font-size:14px}
+.bloco.escuro{background:var(--verde);color:#EDE6D8}
+.bloco.escuro .txt p{color:#C9C3B4}
+.bloco.escuro .eyebrow{color:var(--ouro-claro)}
+.bloco.escuro .tags li{background:rgba(237,230,216,.1);color:#EDE6D8}
+.nota{margin-top:26px;padding:18px 20px;border-left:2px solid var(--ouro-claro);background:rgba(237,230,216,.06);font-size:15.5px}
+.nota b{color:var(--ouro-claro);font-weight:400}
+.bloco .citacao{font:italic 400 24px/1.4 var(--serif);margin-top:22px;color:var(--tinta)}
+
+/* como funciona */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:60px}
+.passo{background:var(--marfim);border-radius:12px;padding:40px 34px}
+.passo .n{font:italic 400 54px/1 var(--serif);color:var(--ouro-claro)}
+.passo h3{font-size:28px;margin:18px 0 10px}
+.passo p{color:var(--cinza);font-size:16px}
+.centro{text-align:center;max-width:720px;margin-inline:auto}
+.centro p{color:var(--cinza);margin-top:16px}
+
+/* sobre */
+.sobre{display:grid;grid-template-columns:1fr 1fr;background:var(--creme)}
+.sobre .img{position:relative;min-height:680px}
+.sobre .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.sobre .txt{padding:100px clamp(30px,6vw,110px);display:flex;flex-direction:column;justify-content:center}
+.sobre .txt p{margin-top:18px;color:#4A443B;max-width:34em}
+.sobre .assin{font:400 50px/1 var(--script);color:var(--ouro);margin-top:28px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.creds span{border:1px solid rgba(110,127,98,.45);border-radius:999px;padding:7px 15px;font-size:13.5px;color:#3E4A36}
+
+/* depoimentos */
+.depo{position:relative;background:#fff;text-align:center;overflow:hidden}
+.depo-grade{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:50px;text-align:center}
+.depo blockquote{font-size:16.5px;color:var(--cinza);line-height:1.75}
+.depo .est{color:var(--salvia);letter-spacing:4px;font-size:16px;margin-bottom:14px}
+.depo cite{display:block;font:500 15px var(--sans);font-style:normal;color:var(--tinta);margin-top:18px}
+
+/* dúvidas */
+.duvidas .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-bottom:1px solid var(--linha)}
+details:first-child{border-top:1px solid var(--linha)}
+summary{list-style:none;cursor:pointer;padding:24px 40px 24px 0;font:400 21px/1.3 var(--serif);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:300 26px var(--sans);color:var(--salvia);transition:transform .3s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 40px 24px 0;color:var(--cinza)}
+
+/* agendar */
+.agendar{background:var(--creme)}
+.agendar .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.agendar .info{margin-top:30px;display:grid;gap:18px;font-size:15.5px;color:var(--cinza)}
+.agendar .info b{display:block;font:400 21px var(--serif);color:var(--tinta)}
+.ficha{background:#fff;border-radius:14px;padding:38px;box-shadow:0 40px 80px -50px rgba(38,48,31,.5)}
+.progresso{display:flex;gap:6px;margin-bottom:28px}
+.progresso i{flex:1;height:3px;border-radius:3px;background:var(--creme);transition:background .3s}
+.progresso i.on{background:var(--salvia)}
+.etapa{display:none}
+.etapa.ativa{display:block;animation:entra .4s ease}
+@keyframes entra{from{opacity:0;transform:translateY(8px)}}
+.etapa h3{font-size:28px;margin-bottom:6px}
+.etapa .sub{color:var(--cinza);font-size:15px;margin-bottom:22px}
+.opcoes{display:grid;gap:10px}
+.opcoes.duas{grid-template-columns:1fr 1fr}
+.op{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--linha);border-radius:10px;cursor:pointer;transition:border-color .2s,background .2s;font-size:15.5px;text-align:left;width:100%}
+.op:hover{border-color:var(--salvia)}
+.op.sel{border-color:var(--salvia);background:#F1F3EC}
+.op small{display:block;color:var(--cinza);font-size:13px}
+.op .bola{flex:none;width:18px;height:18px;border-radius:50%;border:1px solid var(--salvia);display:grid;place-items:center}
+.op.sel .bola::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--salvia)}
+.dias{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:18px;scrollbar-width:thin}
+.dia{flex:none;width:68px;padding:12px 0;border:1px solid var(--linha);border-radius:10px;text-align:center;cursor:pointer;transition:all .2s}
+.dia small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cinza)}
+.dia b{display:block;font:400 24px/1.2 var(--serif)}
+.dia.sel{background:var(--salvia);border-color:var(--salvia);color:#fff}
+.dia.sel small{color:#fff}
+.campo{display:block;margin-bottom:14px}
+.campo span{display:block;font-size:13px;letter-spacing:.06em;color:var(--cinza);margin-bottom:6px}
+.campo input,.campo textarea{width:100%;padding:14px 16px;border:1px solid var(--linha);border-radius:10px;background:#fff;font:inherit;font-size:16px;color:var(--tinta)}
+.campo input:focus,.campo textarea:focus{outline:none;border-color:var(--salvia)}
+.saude{display:grid}
+.sim-nao{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--linha);font-size:15.5px}
+.sim-nao div{display:flex;gap:6px;flex:none}
+.sim-nao button{padding:7px 16px;border:1px solid var(--linha);border-radius:999px;font-size:13.5px}
+.sim-nao button.sel{background:var(--salvia);border-color:var(--salvia);color:#fff}
+.privado{font-size:13px;color:var(--cinza);margin-top:14px}
+.resumo{background:var(--marfim);border-radius:10px;padding:18px 20px;font-size:15px;line-height:1.7;white-space:pre-line}
+.nav-ficha{display:flex;justify-content:space-between;align-items:center;margin-top:26px;gap:12px}
+.nav-ficha .voltar{font-size:14px;color:var(--cinza)}
+.nav-ficha .btn[disabled]{opacity:.4;pointer-events:none}
+.aviso-previa{margin-top:18px;font-size:12.5px;color:var(--cinza);text-align:center}
+
+/* rodapé */
+footer{position:relative;color:#D9D4C7;background:#1E261A url(assets/rodape-folhas.jpg) center/cover;font-size:15px;overflow:hidden}
+footer::before{content:"";position:absolute;inset:0;background:rgba(18,24,15,.62)}
+footer .wrap{position:relative;padding:90px 0 30px}
+.rod-grade{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:50px}
+.rod-grade h4{font:400 21px var(--serif);color:#fff;margin-bottom:18px}
+.rod-grade li{list-style:none;margin-bottom:10px}
+.rod-grade a:hover{color:#fff}
+.rod-marca img{width:52px;filter:brightness(0) invert(1);opacity:.92}
+.rod-marca b{display:block;font:500 22px var(--serif);color:#fff;margin:10px 0 4px;letter-spacing:.03em}
+.rod-marca p{max-width:22em;margin-top:14px;color:#BDB7A9}
+.rod-marca .frase{font:400 30px/1.2 var(--script);color:var(--ouro-claro);margin-top:18px}
+.rod-base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid rgba(255,255,255,.14);margin-top:60px;padding-top:24px;font-size:13px;color:#A9A396}
+.social{display:flex;gap:10px}
+.social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.4);border-radius:6px;display:grid;place-items:center;transition:background .25s}
+.social a:hover{background:rgba(255,255,255,.12)}
+.social svg{width:17px;height:17px}
+.zap{position:fixed;right:22px;bottom:22px;z-index:40;width:58px;height:58px;border-radius:50%;background:var(--salvia);display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(38,48,31,.6);transition:transform .25s}
+.zap:hover{transform:scale(1.07)}
+.zap svg{width:28px;height:28px;color:#fff}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.visivel{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+
+@media (max-width:1000px){
+  .menu{display:none}
+  .capa{min-height:auto;flex-direction:column;align-items:stretch;clip-path:ellipse(220% 100% at 50% 0%)}
+  .capa::before{background:linear-gradient(180deg,rgba(239,231,218,.95) 0%,rgba(239,231,218,.85) 55%,rgba(239,231,218,0) 75%)}
+  .capa .wrap{padding:130px 0 90px}
+  .capa .pessoa{position:relative;width:100%;height:460px;margin-top:10px;right:auto;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 100%);-webkit-mask-composite:source-over;mask-composite:add}
+  .capa .folha{width:160px;right:-50px;top:90px}
+  .selos .wrap{grid-template-columns:1fr 1fr}
+  .atend .wrap{grid-template-columns:1fr;gap:40px}
+  .atend .intro{padding-top:0}
+  .cards{grid-template-columns:1fr;gap:18px}
+  .card,.card:nth-child(2),.card:nth-child(3){margin-top:0;aspect-ratio:4/3.4}
+  .bloco,.sobre{grid-template-columns:1fr}
+  .bloco .img,.sobre .img{min-height:380px}
+  .bloco.inv .img{order:0}
+  .passos{grid-template-columns:1fr}
+  .depo-grade{grid-template-columns:1fr;gap:40px}
+  .duvidas .wrap,.agendar .wrap{grid-template-columns:1fr;gap:40px}
+  .rod-grade{grid-template-columns:1fr 1fr}
+  section{padding:90px 0}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 36px)}
+  .capa h1{font-size:44px}
+  .marca small{letter-spacing:.22em;font-size:7.5px;white-space:nowrap}
+  .marca b{font-size:17px}
+  .capa .acoes .btn{width:100%;justify-content:center}
+  .selos .wrap{grid-template-columns:1fr}
+  .opcoes.duas{grid-template-columns:1fr}
+  .ficha{padding:26px 20px}
+  .rod-grade{grid-template-columns:1fr}
+  .bloco .txt,.sobre .txt{padding:64px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#inicio" class="marca" aria-label="Início">
+      <img src="assets/ak.png" alt="" width="44" height="35">
+      <b>Ana Karla Branco</b>
+      <small>Saúde · Equilíbrio · Bem-estar</small>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#inicio">Início</a>
+      <a href="#atendimentos">Atendimentos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a href="#agendar" class="btn btn-verde">Agendar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="capa" id="capa">
+    <div class="wrap">
+      <div class="texto">
+        <p class="eyebrow rv">Biomédica Acupunturista e Fisioterapeuta</p>
+        <h1 class="rv d1">É tratando a raiz que se restaura <em>a essência.</em></h1>
+        <p class="lede rv d2">Suplementação nutricional injetável e oral, acupuntura e estética regenerativa no Alto da Conquista, em Olinda. Tudo começa por uma avaliação individual.</p>
+        <div class="acoes rv d3">
+          <a href="#agendar" class="btn btn-verde">Agendar avaliação <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <a href="#atendimentos" class="btn btn-claro">Conhecer atendimentos</a>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+
+  <div class="selos">
+    <div class="wrap">
+      <div class="rv"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1"><circle cx="16" cy="16" r="13"/><path d="M10.5 16.5l4 4 7-8"/></svg>Avaliação individual</div>
+      <div class="rv d1"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M16 28c-6-3.5-10-8-10-14 4 0 7.5 1.6 10 5 2.5-3.4 6-5 10-5 0 6-4 10.5-10 14z"/><path d="M16 19V6"/></svg>Cuidado integrativo</div>
+      <div class="rv d2"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M16 4l3 6.5 7 1-5 5 1.2 7L16 20l-6.2 3.5L11 16.5l-5-5 7-1z"/></svg>Parceira Beauty Derm</div>
+      <div class="rv d3"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1"><rect x="6" y="8" width="20" height="18" rx="2"/><path d="M6 13h20M11 5v5M21 5v5"/></svg>Hora marcada</div>
+    </div>
+  </div>
+
+  <section class="atend" id="atendimentos">
+    <svg class="ondas" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#E2D8C7" stroke-width="70" stroke-linecap="round"><path d="M-80 180C200 60 360 360 620 260S980 40 1220 180 1560 380 1560 380"/><path d="M-120 620C180 520 300 820 600 720S1000 520 1240 640 1580 860 1580 860"/></g></svg>
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow rv">Atendimentos</p>
+        <h2 class="rv d1">Três caminhos para cuidar de você</h2>
+        <p class="rv d2">Cada atendimento parte do mesmo princípio da Medicina Tradicional Chinesa: olhar para a causa, e não só para o que aparece por fora.</p>
+        <a href="#agendar" class="btn btn-verde rv d3">Agendar avaliação</a>
+      </div>
+      <div class="cards">
+        <a href="#suplementacao" class="card rv"><img src="assets/card-suplementacao.jpg" alt="Frascos de vitaminas e cápsulas" loading="lazy"><div class="rot"><h3>Suplementação</h3><p>Injetável e oral, montada para o que o seu corpo precisa.</p></div></a>
+        <a href="#acupuntura" class="card rv d1"><img src="assets/card-acupuntura.jpg" alt="Agulhas de acupuntura e ventosas" loading="lazy"><div class="rot"><h3>Acupuntura</h3><p>Equilíbrio do corpo, da mente e das emoções.</p></div></a>
+        <a href="#estetica" class="card rv d2"><img src="assets/card-estetica.jpg" alt="Conta-gotas com sérum dourado e ampolas" loading="lazy"><div class="rot"><h3>Estética regenerativa</h3><p>Peptídeos e exossomos para a pele se renovar.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="bloco escuro" id="suplementacao">
+    <div class="img"><img src="assets/suplementacao.jpg" alt="Dra. Ana Karla Branco, especialista em suplementação" loading="lazy" style="object-position:50% 20%"></div>
+    <div class="txt">
+      <p class="num rv">01</p>
+      <p class="eyebrow rv">Suplementação nutricional</p>
+      <h2 class="rv d1" style="margin-top:10px">O que falta por dentro <em>aparece por fora.</em></h2>
+      <p class="rv d2">Cansaço, imunidade baixa, queda de cabelo e metabolismo lento muitas vezes têm a ver com o aporte nutricional. A suplementação é montada a partir da sua avaliação, injetável em consultório ou oral para a rotina em casa.</p>
+      <ul class="tags rv d2"><li>Energia e disposição</li><li>Imunidade</li><li>Foco</li><li>Saúde hormonal</li><li>Queda de cabelo</li><li>Massa muscular</li><li>Performance esportiva</li></ul>
+      <p class="nota rv d3"><b>Usa caneta emagrecedora?</b> Ela acompanha quem está em uso, com suplementação pensada para cuidar da massa magra, do cabelo e da disposição.</p>
+    </div>
+  </div>
+
+  <div class="bloco inv" id="acupuntura">
+    <div class="img"><img src="assets/acupuntura-retrato.jpg" alt="Ana Karla Branco, biomédica acupunturista" loading="lazy" style="object-position:50% 25%"></div>
+    <div class="txt">
+      <p class="num rv">02</p>
+      <p class="eyebrow rv">Acupuntura e Medicina Tradicional Chinesa</p>
+      <h2 class="rv d1" style="margin-top:10px">Corpo, mente e emoções <em>em equilíbrio.</em></h2>
+      <p class="citacao rv d2">Na MTC, mente e corpo se integram. O tratamento busca restabelecer o fluxo de energia na raiz do desequilíbrio.</p>
+      <ul class="lista rv d2">
+        <li>Acupuntura sistêmica <span>corpo inteiro</span></li>
+        <li>Acupuntura craniana <span>pontos na cabeça</span></li>
+        <li>Acupuntura estética <span>rosto e pele</span></li>
+        <li>Eletroacupuntura <span>estímulo elétrico leve</span></li>
+        <li>Ventosaterapia, moxa e gua sha <span>técnicas da MTC</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bloco" id="estetica" style="background:var(--marfim)">
+    <div class="img"><img src="assets/pele-toalha.jpg" alt="Pele hidratada com toalha branca" loading="lazy"></div>
+    <div class="txt">
+      <p class="num rv">03</p>
+      <p class="eyebrow rv">Estética regenerativa</p>
+      <h2 class="rv d1" style="margin-top:10px">O envelhecimento <em>começa por dentro.</em></h2>
+      <p class="rv d2">A estética regenerativa estimula o próprio organismo a se renovar, em vez de só disfarçar. Parceira oficial do laboratório Beauty Derm, integrante da comunidade EXOS.</p>
+      <ul class="lista rv d2">
+        <li>Exossomos <span>regeneração da pele</span></li>
+        <li>Peptídeo GHK-Cu <span>colágeno e reparação</span></li>
+        <li>Microagulhamento com espículas <span>sem dermapen</span></li>
+        <li>Faciais <span>peeling coreano, glow, face gold</span></li>
+      </ul>
+      <ul class="tags rv d3"><li>Rosto</li><li>Flacidez</li><li>Estrias</li><li>Abdômen</li><li>Glúteos</li><li>Braços</li><li>Queda de cabelo</li></ul>
+    </div>
+  </div>
+
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="centro">
+        <p class="eyebrow rv">Como funciona</p>
+        <h2 class="rv d1">Primeiro, <em>entender você.</em></h2>
+        <p class="rv d2">Nenhum protocolo começa sem conversa. É na avaliação que se decide o que faz sentido para o seu caso.</p>
+      </div>
+      <div class="passos">
+        <div class="passo rv"><span class="n">01</span><h3>Avaliação</h3><p>Conversa sobre rotina, histórico, queixas e objetivos.</p></div>
+        <div class="passo rv d1"><span class="n">02</span><h3>Protocolo</h3><p>Um plano só seu, que pode unir suplementação, acupuntura e estética.</p></div>
+        <div class="passo rv d2"><span class="n">03</span><h3>Acompanhamento</h3><p>Retornos para ajustar o tratamento conforme o corpo responde.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sobre" id="sobre">
+    <div class="img"><img src="assets/capa.jpg" alt="Dra. Ana Karla Branco" loading="lazy"></div>
+    <div class="txt">
+      <p class="eyebrow rv">Sobre</p>
+      <h2 class="rv d1" style="margin-top:10px">Oi, eu sou a <em>Ana Karla.</em></h2>
+      <p class="rv d2">Sou biomédica acupunturista e fisioterapeuta, especialista em suplementação natural e peptídeos regenerativos. Meu trabalho une a Medicina Tradicional Chinesa com o que há de mais atual em estética regenerativa.</p>
+      <p class="rv d2">Trazer esse cuidado para perto, aqui no Alto da Conquista, era um desejo antigo. Cada atendimento é pensado para tratar a causa, com calma e atenção.</p>
+      <div class="creds rv d3"><span>CRBM 17430</span><span>CREFITO 442290-F</span><span>Parceira oficial Beauty Derm</span><span>Comunidade EXOS</span></div>
+      <p class="assin rv d3">Ana Karla Branco</p>
+    </div>
+  </div>
+
+  <!-- Depoimentos: só com depoimentos REAIS enviados pela Ana. Remover o atributo hidden quando chegarem. -->
+  <section class="depo" id="depoimentos" hidden>
+    <div class="wrap">
+      <p class="eyebrow">Depoimentos</p>
+      <h2>Quem já passou por aqui</h2>
+      <div class="depo-grade">
+        <div><p class="est">★★★★★</p><blockquote>“Depoimento real 1”</blockquote><cite>Nome</cite></div>
+        <div><p class="est">★★★★★</p><blockquote>“Depoimento real 2”</blockquote><cite>Nome</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="duvidas" id="duvidas">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow rv">Dúvidas</p>
+        <h2 class="rv d1">Antes de <em>agendar</em></h2>
+      </div>
+      <div class="rv d1">
+        <details><summary>Preciso passar por avaliação primeiro?</summary><p>Sim. Todo atendimento começa pela avaliação individual. É ela que define qual suplementação, técnica ou protocolo faz sentido para você.</p></details>
+        <details><summary>Quanto custa?</summary><p>O valor depende do protocolo definido na avaliação. Pelo WhatsApp você pede os valores e tira as dúvidas antes de marcar.</p></details>
+        <details><summary>Uso caneta emagrecedora. Posso fazer?</summary><p>Pode. Ela acompanha quem está em uso, com suplementação pensada para essa fase. Na avaliação vocês conversam sobre o seu caso.</p></details>
+        <details><summary>Dá pra combinar os atendimentos?</summary><p>Dá, e muitas vezes é o caminho indicado. O protocolo pode unir acupuntura, suplementação e estética.</p></details>
+        <details><summary>Onde fica o atendimento?</summary><p>No Alto da Conquista, em Olinda. O endereço completo vai na confirmação do horário.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="agendar" id="agendar">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow rv">Agendar</p>
+        <h2 class="rv d1">Seu horário em <em>poucos passos.</em></h2>
+        <div class="info rv d2">
+          <p><b>Alto da Conquista, Olinda</b>Endereço completo enviado na confirmação.</p>
+          <p><b>(81) 97310-1919</b>Prefere conversar? Chame no WhatsApp.</p>
+        </div>
+      </div>
+
+      <form class="ficha rv d1" id="ficha" novalidate onsubmit="return false">
+        <div class="progresso" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        <div class="etapa ativa" data-etapa="0">
+          <h3>Qual atendimento?</h3>
+          <p class="sub">Se não souber, tudo bem: a avaliação serve pra isso.</p>
+          <div class="opcoes" data-grupo="servico">
+            <button type="button" class="op" data-v="Suplementação nutricional (injetável ou oral)"><span class="bola"></span><span>Suplementação nutricional<small>Injetável ou oral</small></span></button>
+            <button type="button" class="op" data-v="Acupuntura"><span class="bola"></span><span>Acupuntura<small>Sistêmica, craniana, estética, ventosa, moxa</small></span></button>
+            <button type="button" class="op" data-v="Estética regenerativa"><span class="bola"></span><span>Estética regenerativa<small>Peptídeos, exossomos, faciais</small></span></button>
+            <button type="button" class="op" data-v="Ainda não sei, quero orientação"><span class="bola"></span><span>Ainda não sei<small>Quero uma orientação</small></span></button>
+          </div>
+        </div>
+        <div class="etapa" data-etapa="1">
+          <h3>Qual dia fica melhor?</h3>
+          <p class="sub">Escolha o dia e o período.</p>
+          <div class="dias" id="dias"></div>
+          <div class="opcoes duas" data-grupo="periodo">
+            <button type="button" class="op" data-v="Manhã"><span class="bola"></span><span>Manhã</span></button>
+            <button type="button" class="op" data-v="Tarde"><span class="bola"></span><span>Tarde</span></button>
+          </div>
+        </div>
+        <div class="etapa" data-etapa="2">
+          <h3>Sobre sua saúde</h3>
+          <p class="sub">Ajuda a preparar a sua avaliação.</p>
+          <div class="saude">
+            <div class="sim-nao" data-p="Está grávida ou amamentando?"><span>Está grávida ou amamentando?</span><div><button type="button">Sim</button><button type="button">Não</button></div></div>
+            <div class="sim-nao" data-p="Tem alguma alergia?"><span>Tem alguma alergia?</span><div><button type="button">Sim</button><button type="button">Não</button></div></div>
+            <div class="sim-nao" data-p="Usa medicação contínua?"><span>Usa medicação contínua?</span><div><button type="button">Sim</button><button type="button">Não</button></div></div>
+            <div class="sim-nao" data-p="Usa caneta emagrecedora?"><span>Usa caneta emagrecedora?</span><div><button type="button">Sim</button><button type="button">Não</button></div></div>
+          </div>
+          <p class="privado">Essas respostas vão só na sua mensagem do WhatsApp. Nada fica guardado no site.</p>
+        </div>
+        <div class="etapa" data-etapa="3">
+          <h3>Seus dados</h3>
+          <p class="sub">Para ela te responder.</p>
+          <label class="campo"><span>Nome e sobrenome</span><input id="nome" autocomplete="name" required></label>
+          <label class="campo"><span>Quer contar algo? (opcional)</span><textarea id="obs" rows="2" placeholder="Ex.: queixa principal, objetivo"></textarea></label>
+          <div class="resumo" id="resumo"></div>
+        </div>
+        <div class="nav-ficha">
+          <button type="button" class="voltar" id="voltar" hidden>← Voltar</button>
+          <span></span>
+          <button type="button" class="btn btn-verde" id="avancar" disabled>Continuar</button>
+        </div>
+        <p class="aviso-previa">Prévia: na versão final, os horários livres aparecem direto da agenda dela.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="rod-grade">
+      <div class="rod-marca">
+        <img src="assets/ak.png" alt="">
+        <b>Ana Karla Branco</b>
+        <p>Suplementação nutricional, acupuntura e estética regenerativa no Alto da Conquista, Olinda.</p>
+        <p class="frase">É tratando a raiz que se restaura a essência.</p>
+      </div>
+      <div>
+        <h4>Atendimentos</h4>
+        <ul><li><a href="#suplementacao">Suplementação</a></li><li><a href="#acupuntura">Acupuntura</a></li><li><a href="#estetica">Estética regenerativa</a></li><li><a href="#como-funciona">Como funciona</a></li></ul>
+      </div>
+      <div>
+        <h4>Sobre</h4>
+        <ul><li><a href="#sobre">Quem sou</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#agendar">Agendar</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul><li><a href="https://wa.me/5581973101919" target="_blank" rel="noopener">(81) 97310-1919</a></li><li>Alto da Conquista, Olinda/PE</li><li>CRBM 17430 · CREFITO 442290-F</li></ul>
+      </div>
+    </div>
+    <div class="rod-base">
+      <span>Prévia · Site feito pelo Ateliê de Sites</span>
+      <div class="social">
+        <a href="https://www.instagram.com/anakarlabranco.mtc.acupuntura/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+        <a href="https://wa.me/5581973101919" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5581973101919?text=Ol%C3%A1%2C%20Ana%20Karla!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(() => {
+  const WHATS = '5581973101919';
+  const topo = document.getElementById('topo');
+  const capa = document.getElementById('capa');
+  const aoRolar = () => topo.classList.toggle('fixo', scrollY > capa.offsetHeight * .6);
+  addEventListener('scroll', aoRolar, { passive: true }); aoRolar();
+  requestAnimationFrame(() => capa.classList.add('pronta'));
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visivel'); io.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  const etapas = [...document.querySelectorAll('.etapa')];
+  const barras = [...document.querySelectorAll('.progresso i')];
+  const avancar = document.getElementById('avancar'), voltar = document.getElementById('voltar');
+  const dados = { servico: '', dia: '', periodo: '', saude: {} };
+  let atual = 0;
+
+  document.querySelectorAll('.opcoes').forEach(g => g.addEventListener('click', e => {
+    const b = e.target.closest('.op'); if (!b) return;
+    g.querySelectorAll('.op').forEach(x => x.classList.toggle('sel', x === b));
+    dados[g.dataset.grupo] = b.dataset.v; checar();
+  }));
+
+  const semana = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+  const meses = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+  const diasEl = document.getElementById('dias');
+  const hoje = new Date();
+  for (let i = 1, n = 0; n < 14; i++) {
+    const d = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + i);
+    if (d.getDay() === 0) continue;
+    n++;
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'dia';
+    b.dataset.v = `${semana[d.getDay()]}, ${d.getDate()} de ${meses[d.getMonth()]}`;
+    b.innerHTML = `<small>${semana[d.getDay()]}</small><b>${d.getDate()}</b><small>${meses[d.getMonth()]}</small>`;
+    diasEl.appendChild(b);
+  }
+  diasEl.addEventListener('click', e => {
+    const b = e.target.closest('.dia'); if (!b) return;
+    diasEl.querySelectorAll('.dia').forEach(x => x.classList.toggle('sel', x === b));
+    dados.dia = b.dataset.v; checar();
+  });
+
+  document.querySelectorAll('.sim-nao').forEach(l => l.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    l.querySelectorAll('button').forEach(x => x.classList.toggle('sel', x === b));
+    dados.saude[l.dataset.p] = b.textContent; checar();
+  }));
+
+  const nome = document.getElementById('nome'), obs = document.getElementById('obs');
+  nome.addEventListener('input', checar); obs.addEventListener('input', () => atual === 3 && resumo());
+
+  function ok() {
+    if (atual === 0) return !!dados.servico;
+    if (atual === 1) return !!dados.dia && !!dados.periodo;
+    if (atual === 2) return Object.keys(dados.saude).length === 4;
+    return nome.value.trim().length > 2;
+  }
+  function checar() { avancar.disabled = !ok(); if (atual === 3) resumo(); }
+  function mensagem() {
+    const s = Object.entries(dados.saude).map(([p, r]) => `${r === 'Sim' ? '⚠️ ' : ''}${p} ${r}`).join('\n');
+    return `Olá, Ana Karla! Quero agendar pelo site.\n\nNome: ${nome.value.trim()}\nAtendimento: ${dados.servico}\nPreferência: ${dados.dia}, ${dados.periodo.toLowerCase()}\n\nSaúde:\n${s}` + (obs.value.trim() ? `\n\nObservação: ${obs.value.trim()}` : '');
+  }
+  function resumo() { document.getElementById('resumo').textContent = mensagem(); }
+  function ir(i) {
+    atual = i;
+    etapas.forEach((e, k) => e.classList.toggle('ativa', k === i));
+    barras.forEach((b, k) => b.classList.toggle('on', k <= i));
+    voltar.hidden = i === 0;
+    avancar.textContent = i === 3 ? 'Enviar no WhatsApp' : 'Continuar';
+    checar();
+  }
+  avancar.addEventListener('click', () => {
+    if (!ok()) return;
+    if (atual < 3) return ir(atual + 1);
+    location.href = `https://wa.me/${WHATS}?text=${encodeURIComponent(mensagem())}`;
+  });
+  voltar.addEventListener('click', () => ir(Math.max(0, atual - 1)));
+})();
+</script>
+</body>
+</html>
