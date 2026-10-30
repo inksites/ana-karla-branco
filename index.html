@@ -227,6 +227,59 @@ footer .wrap{position:relative;padding:90px 0 30px}
 .rv.visivel{opacity:1;transform:none}
 .rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
 
+
+/* detalhes minimalistas */
+.cab-linha{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:64px}
+.link-seta{font-size:14px;color:var(--salvia);border-bottom:1px solid currentColor;padding-bottom:4px;white-space:nowrap}
+.link-seta span{display:inline-block;transition:transform .25s}.link-seta:hover span{transform:translateX(4px)}
+.colunas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha)}
+.coluna{padding:48px 40px 10px;position:relative}
+.coluna:first-child{padding-left:0}.coluna:last-child{padding-right:0}
+.coluna+.coluna{border-left:1px solid var(--linha)}
+.coluna .ico{width:44px;height:44px;color:var(--ouro);margin-bottom:22px}
+.coluna .n{display:block;font:italic 400 14px var(--serif);color:var(--ouro);margin-bottom:6px}
+.coluna h3{font-size:26px;margin-bottom:12px}
+.coluna>p{color:var(--cinza);font-size:15px}
+.coluna ul{margin-top:22px}
+.coluna li{list-style:none;font-size:14.5px;padding:11px 0;border-bottom:1px solid var(--linha);display:flex;gap:12px;align-items:center}
+.coluna li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--salvia);flex:none}
+.coluna .obs{margin-top:18px;font:italic 400 16px/1.5 var(--serif);color:var(--ouro-esc)}
+
+/* sobre com 1 foto */
+.quem{padding-top:40px}
+.quem-caixa{display:grid;grid-template-columns:1.05fr 1fr .45fr;background:var(--creme);border-radius:6px;overflow:hidden;align-items:center}
+.quem-foto{align-self:stretch;min-height:520px;position:relative}
+.quem-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.quem-txt{padding:70px 20px 70px 60px}
+.quem-txt h2{margin-top:10px;font-size:clamp(34px,3.6vw,50px)}
+.quem-txt p{margin-top:16px;color:#4A443B;font-size:15.5px}
+.quem-txt .creds-linha{font-size:13px;letter-spacing:.08em;color:var(--salvia)}
+.quem-ramo{color:var(--ouro);padding:40px 30px 40px 0;text-align:center}
+.quem-ramo svg{width:90px;margin:0 auto 18px;opacity:.75}
+.quem-ramo p{font:italic 400 19px/1.4 var(--serif);color:var(--ouro-esc)}
+
+/* passos em linha */
+.passos-sec{padding-top:100px}
+.linha-passos{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;margin-top:56px;position:relative}
+.linha-passos::before{content:"";position:absolute;left:0;right:0;top:20px;height:1px;background:var(--linha)}
+.linha-passos div{position:relative;text-align:center}
+.linha-passos span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--papel);border:1px solid var(--ouro-claro);font:italic 400 15px var(--serif);color:var(--ouro-esc)}
+.linha-passos h3{font-size:25px;margin:20px 0 8px}
+.linha-passos p{color:var(--cinza);font-size:15px;max-width:22em;margin:0 auto}
+@media (max-width:1000px){
+  .cab-linha{flex-direction:column;align-items:start}
+  .colunas{grid-template-columns:1fr}
+  .coluna,.coluna:first-child,.coluna:last-child{padding:36px 0 10px}
+  .coluna+.coluna{border-left:0;border-top:1px solid var(--linha)}
+  .quem-caixa{grid-template-columns:1fr}
+  .quem-foto{min-height:420px}
+  .quem-txt{padding:50px 26px 20px}
+  .quem-ramo{display:flex;align-items:center;gap:18px;padding:10px 26px 40px;text-align:left}
+  .quem-ramo svg{width:46px;margin:0}
+  .linha-passos{grid-template-columns:1fr;gap:34px}
+  .linha-passos::before{display:none}
+}
+
 @media (max-width:1000px){
   .menu{display:none}
   .capa{min-height:auto;flex-direction:column;align-items:stretch;clip-path:ellipse(220% 100% at 50% 0%)}
@@ -329,80 +382,95 @@ footer .wrap{position:relative;padding:90px 0 30px}
     </div>
   </section>
 
-  <div class="bloco escuro" id="suplementacao">
-    <div class="img"><img src="assets/suplementacao.jpg" alt="Dra. Ana Karla Branco, especialista em suplementação" loading="lazy" style="object-position:50% 20%"></div>
-    <div class="txt">
-      <p class="num rv">01</p>
-      <p class="eyebrow rv">Suplementação nutricional</p>
-      <h2 class="rv d1" style="margin-top:10px">O que falta por dentro <em>aparece por fora.</em></h2>
-      <p class="rv d2">Cansaço, imunidade baixa, queda de cabelo e metabolismo lento muitas vezes têm a ver com o aporte nutricional. A suplementação é montada a partir da sua avaliação, injetável em consultório ou oral para a rotina em casa.</p>
-      <ul class="tags rv d2"><li>Energia e disposição</li><li>Imunidade</li><li>Foco</li><li>Saúde hormonal</li><li>Queda de cabelo</li><li>Massa muscular</li><li>Performance esportiva</li></ul>
-      <p class="nota rv d3"><b>Usa caneta emagrecedora?</b> Ela acompanha quem está em uso, com suplementação pensada para cuidar da massa magra, do cabelo e da disposição.</p>
-    </div>
-  </div>
-
-  <div class="bloco inv" id="acupuntura">
-    <div class="img"><img src="assets/acupuntura-retrato.jpg" alt="Ana Karla Branco, biomédica acupunturista" loading="lazy" style="object-position:50% 25%"></div>
-    <div class="txt">
-      <p class="num rv">02</p>
-      <p class="eyebrow rv">Acupuntura e Medicina Tradicional Chinesa</p>
-      <h2 class="rv d1" style="margin-top:10px">Corpo, mente e emoções <em>em equilíbrio.</em></h2>
-      <p class="citacao rv d2">Na MTC, mente e corpo se integram. O tratamento busca restabelecer o fluxo de energia na raiz do desequilíbrio.</p>
-      <ul class="lista rv d2">
-        <li>Acupuntura sistêmica <span>corpo inteiro</span></li>
-        <li>Acupuntura craniana <span>pontos na cabeça</span></li>
-        <li>Acupuntura estética <span>rosto e pele</span></li>
-        <li>Eletroacupuntura <span>estímulo elétrico leve</span></li>
-        <li>Ventosaterapia, moxa e gua sha <span>técnicas da MTC</span></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="bloco" id="estetica" style="background:var(--marfim)">
-    <div class="img"><img src="assets/pele-toalha.jpg" alt="Pele hidratada com toalha branca" loading="lazy"></div>
-    <div class="txt">
-      <p class="num rv">03</p>
-      <p class="eyebrow rv">Estética regenerativa</p>
-      <h2 class="rv d1" style="margin-top:10px">O envelhecimento <em>começa por dentro.</em></h2>
-      <p class="rv d2">A estética regenerativa estimula o próprio organismo a se renovar, em vez de só disfarçar. Parceira oficial do laboratório Beauty Derm, integrante da comunidade EXOS.</p>
-      <ul class="lista rv d2">
-        <li>Exossomos <span>regeneração da pele</span></li>
-        <li>Peptídeo GHK-Cu <span>colágeno e reparação</span></li>
-        <li>Microagulhamento com espículas <span>sem dermapen</span></li>
-        <li>Faciais <span>peeling coreano, glow, face gold</span></li>
-      </ul>
-      <ul class="tags rv d3"><li>Rosto</li><li>Flacidez</li><li>Estrias</li><li>Abdômen</li><li>Glúteos</li><li>Braços</li><li>Queda de cabelo</li></ul>
-    </div>
-  </div>
-
-  <section id="como-funciona">
+  <section class="detalhes" id="detalhes">
     <div class="wrap">
-      <div class="centro">
-        <p class="eyebrow rv">Como funciona</p>
-        <h2 class="rv d1">Primeiro, <em>entender você.</em></h2>
-        <p class="rv d2">Nenhum protocolo começa sem conversa. É na avaliação que se decide o que faz sentido para o seu caso.</p>
+      <div class="cab-linha">
+        <div>
+          <p class="eyebrow rv">Em detalhe</p>
+          <h2 class="rv d1">O que cada <em>atendimento</em> inclui</h2>
+        </div>
+        <a href="#agendar" class="link-seta rv d2">Agendar avaliação <span>→</span></a>
       </div>
-      <div class="passos">
-        <div class="passo rv"><span class="n">01</span><h3>Avaliação</h3><p>Conversa sobre rotina, histórico, queixas e objetivos.</p></div>
-        <div class="passo rv d1"><span class="n">02</span><h3>Protocolo</h3><p>Um plano só seu, que pode unir suplementação, acupuntura e estética.</p></div>
-        <div class="passo rv d2"><span class="n">03</span><h3>Acompanhamento</h3><p>Retornos para ajustar o tratamento conforme o corpo responde.</p></div>
+      <div class="colunas">
+        <article class="coluna rv" id="suplementacao">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><path d="M24 42c-9-5-15-12-15-21 6 0 11 2.5 15 7.5 4-5 9-7.5 15-7.5 0 9-6 16-15 21z"/><path d="M24 42V12"/><path d="M24 22l-5-5M24 30l6-6"/></svg>
+          <span class="n">01</span>
+          <h3>Suplementação nutricional</h3>
+          <p>Montada a partir da avaliação, para o que o seu corpo realmente precisa.</p>
+          <ul>
+            <li>Injetável, em consultório</li>
+            <li>Oral, para a rotina em casa</li>
+            <li>Energia, imunidade e foco</li>
+            <li>Queda de cabelo e saúde hormonal</li>
+            <li>Massa muscular e performance</li>
+          </ul>
+          <p class="obs">Usa caneta emagrecedora? Ela acompanha quem está em uso.</p>
+        </article>
+        <article class="coluna rv d1" id="acupuntura">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><circle cx="24" cy="24" r="17"/><path d="M24 7a8.5 8.5 0 0 1 0 17 8.5 8.5 0 0 0 0 17"/><circle cx="24" cy="15.5" r="2"/><circle cx="24" cy="32.5" r="2"/></svg>
+          <span class="n">02</span>
+          <h3>Acupuntura</h3>
+          <p>Medicina Tradicional Chinesa para o equilíbrio do corpo, da mente e das emoções.</p>
+          <ul>
+            <li>Acupuntura sistêmica</li>
+            <li>Acupuntura craniana</li>
+            <li>Acupuntura estética</li>
+            <li>Eletroacupuntura</li>
+            <li>Ventosaterapia, moxa e gua sha</li>
+          </ul>
+        </article>
+        <article class="coluna rv d2" id="estetica">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><path d="M24 6c6 9 11 15 11 22a11 11 0 0 1-22 0c0-7 5-13 11-22z"/><path d="M18 29a6 6 0 0 0 6 6"/></svg>
+          <span class="n">03</span>
+          <h3>Estética regenerativa</h3>
+          <p>Estimula a pele a se renovar por dentro. Parceira oficial Beauty Derm.</p>
+          <ul>
+            <li>Exossomos e peptídeo GHK-Cu</li>
+            <li>Microagulhamento com espículas</li>
+            <li>Peeling coreano, glow e face gold</li>
+            <li>Flacidez, estrias e textura</li>
+            <li>Rosto, abdômen, glúteos e braços</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <div class="sobre" id="sobre">
-    <div class="img"><img src="assets/capa.jpg" alt="Dra. Ana Karla Branco" loading="lazy"></div>
-    <div class="txt">
-      <p class="eyebrow rv">Sobre</p>
-      <h2 class="rv d1" style="margin-top:10px">Oi, eu sou a <em>Ana Karla.</em></h2>
-      <p class="rv d2">Sou biomédica acupunturista e fisioterapeuta, especialista em suplementação natural e peptídeos regenerativos. Meu trabalho une a Medicina Tradicional Chinesa com o que há de mais atual em estética regenerativa.</p>
-      <p class="rv d2">Trazer esse cuidado para perto, aqui no Alto da Conquista, era um desejo antigo. Cada atendimento é pensado para tratar a causa, com calma e atenção.</p>
-      <div class="creds rv d3"><span>CRBM 17430</span><span>CREFITO 442290-F</span><span>Parceira oficial Beauty Derm</span><span>Comunidade EXOS</span></div>
-      <p class="assin rv d3">Ana Karla Branco</p>
+  <section class="quem" id="sobre">
+    <div class="wrap">
+      <div class="quem-caixa">
+        <div class="quem-foto rv"><img src="assets/suplementacao.jpg" alt="Dra. Ana Karla Branco" loading="lazy"></div>
+        <div class="quem-txt">
+          <p class="eyebrow rv">Sobre</p>
+          <h2 class="rv d1">Oi, eu sou a <em>Ana Karla.</em></h2>
+          <p class="rv d2">Biomédica acupunturista e fisioterapeuta, especialista em suplementação natural e peptídeos regenerativos. Meu trabalho une a Medicina Tradicional Chinesa com o que há de mais atual em estética regenerativa.</p>
+          <p class="rv d2">Trazer esse cuidado para perto, aqui no Alto da Conquista, era um desejo antigo.</p>
+          <p class="creds-linha rv d3">CRBM 17430 · CREFITO 442290-F</p>
+          <a href="#agendar" class="btn btn-verde rv d3" style="margin-top:26px">Agendar avaliação</a>
+        </div>
+        <div class="quem-ramo" aria-hidden="true">
+          <svg viewBox="0 0 120 220" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 215C40 160 60 110 100 10"/><path d="M38 170c-14-6-22-18-22-30 12 4 20 14 22 30zM48 140c14-4 24-14 26-28-13 3-23 13-26 28zM58 112c-13-7-19-19-18-31 11 5 17 16 18 31zM70 84c13-5 21-16 22-29-12 4-20 15-22 29zM80 58c-11-8-15-20-12-31 10 7 14 18 12 31z"/></svg>
+          <p>“Saúde, equilíbrio<br>e bem-estar.”</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Depoimentos: só com depoimentos REAIS enviados pela Ana. Remover o atributo hidden quando chegarem. -->
+  <section id="como-funciona" class="passos-sec">
+    <div class="wrap">
+      <div class="centro">
+        <p class="eyebrow rv">Como funciona</p>
+        <h2 class="rv d1">Primeiro, <em>entender você.</em></h2>
+      </div>
+      <div class="linha-passos">
+        <div class="rv"><span>01</span><h3>Avaliação</h3><p>Conversa sobre rotina, histórico, queixas e objetivos.</p></div>
+        <div class="rv d1"><span>02</span><h3>Protocolo</h3><p>Um plano só seu, que pode unir os três atendimentos.</p></div>
+        <div class="rv d2"><span>03</span><h3>Acompanhamento</h3><p>Retornos para ajustar conforme o corpo responde.</p></div>
+      </div>
+    </div>
+  </section>
+
+<!-- Depoimentos: só com depoimentos REAIS enviados pela Ana. Remover o atributo hidden quando chegarem. -->
   <section class="depo" id="depoimentos" hidden>
     <div class="wrap">
       <p class="eyebrow">Depoimentos</p>
