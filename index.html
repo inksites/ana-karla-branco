@@ -274,6 +274,65 @@ footer .wrap{position:relative;padding:90px 0 30px}
 .mapa-card h3{font-size:28px;margin:8px 0 10px}
 .mapa-card p{color:var(--cinza);font-size:15px;margin-bottom:22px}
 @media (max-width:560px){.mapa{height:auto;display:flex;flex-direction:column-reverse}.mapa iframe{position:relative;height:300px}.mapa .wrap{padding:30px 0}.mapa-card{box-shadow:none;padding:0;background:none}}
+
+/* destaques (cards horizontais) */
+.destaques{padding-top:40px}
+.dest-grade{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.dest{display:block;background:var(--marfim);border-radius:6px;overflow:hidden;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.dest:hover{transform:translateY(-6px);box-shadow:0 30px 60px -34px rgba(38,48,31,.4)}
+.dest-img{aspect-ratio:16/10;overflow:hidden}
+.dest-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.dest:hover .dest-img img{transform:scale(1.05)}
+.dest-txt{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px 26px}
+.dest-txt h3{font-size:21px;margin-bottom:4px}
+.dest-txt p{font-size:14px;color:var(--cinza)}
+.seta{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--ouro-claro);display:grid;place-items:center;color:var(--ouro-esc);transition:background .25s,color .25s}
+.dest:hover .seta{background:var(--salvia);border-color:var(--salvia);color:#fff}
+
+/* faixa com frase */
+.faixa-frase{display:grid;grid-template-columns:1fr 1fr;padding:0;min-height:340px;background:var(--salvia);margin-top:110px}
+.ff-txt{display:flex;flex-direction:column;justify-content:center;padding:60px clamp(30px,7vw,120px);color:#F4F1E8}
+.ff-aspa{font:italic 400 80px/0.6 var(--serif);color:var(--ouro-claro);height:34px}
+.ff-frase{font:italic 400 clamp(26px,2.6vw,36px)/1.35 var(--serif);max-width:18em}
+.ff-autor{margin-top:22px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#D9DECF}
+.ff-img{position:relative;overflow:hidden}
+.ff-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ff-img::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--salvia) 0%,rgba(110,127,98,0) 35%)}
+
+/* sobre com moldura */
+.sobre2{background:var(--creme);overflow:hidden}
+.sobre2 .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:110px;align-items:center}
+.s2-foto{position:relative;max-width:470px;justify-self:center;width:100%}
+.s2-quadro{position:relative;z-index:1;aspect-ratio:1/1;border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(60,48,30,.45)}
+.s2-quadro img{width:100%;height:100%;object-fit:cover;object-position:40% 18%}
+.s2-contorno{position:absolute;inset:0;transform:translate(28px,28px);border:1px solid var(--ouro-claro);border-radius:26px}
+.s2-selo{position:absolute;z-index:2;left:-34px;bottom:44px;background:var(--papel);border-radius:14px;padding:16px 20px;font-size:13px;color:var(--cinza);box-shadow:0 20px 40px -20px rgba(60,48,30,.35);line-height:1.45}
+.s2-selo b{display:block;font:400 17px var(--serif);color:var(--tinta)}
+.s2-txt h2{margin-top:10px}
+.s2-txt p{margin-top:18px;color:#4A443B;max-width:34em}
+
+/* galeria */
+.galeria{padding:110px 0}
+.gal-grade{display:grid;grid-template-columns:.7fr 2.3fr;gap:40px;align-items:center}
+.gal-cab h2{margin-top:10px}
+.gal-linha{display:block;width:70px;height:1px;background:var(--ouro);margin-top:26px}
+.gal-fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-fotos div{aspect-ratio:3/4;border-radius:6px;overflow:hidden}
+.gal-fotos img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal-fotos div:hover img{transform:scale(1.06)}
+@media (max-width:1000px){
+  .dest-grade{grid-template-columns:1fr}
+  .faixa-frase{grid-template-columns:1fr}
+  .ff-img{min-height:240px}
+  .ff-img::before{background:linear-gradient(180deg,var(--salvia) 0%,rgba(110,127,98,0) 40%)}
+  .sobre2 .wrap{grid-template-columns:1fr;gap:70px}
+  .s2-foto{max-width:340px}
+  .s2-selo{left:-12px;bottom:24px}
+  .gal-grade{grid-template-columns:1fr}
+  .gal-fotos{grid-template-columns:1fr 1fr}
+}
+
+.sobre2 .assin{font:400 50px/1 var(--script);color:var(--ouro);margin-top:28px}
 @media (max-width:1000px){
   .cab-linha{flex-direction:column;align-items:start}
   .colunas{grid-template-columns:1fr}
@@ -444,27 +503,51 @@ footer .wrap{position:relative;padding:90px 0 30px}
     </div>
   </section>
 
-  <section class="quem" id="sobre">
+  <section class="destaques" id="protocolos">
     <div class="wrap">
-      <div class="quem-caixa">
-        <div class="quem-foto rv"><img src="assets/suplementacao.jpg" alt="Dra. Ana Karla Branco" loading="lazy"></div>
-        <div class="quem-txt">
-          <p class="eyebrow rv">Sobre</p>
-          <h2 class="rv d1">Oi, eu sou a <em>Ana Karla.</em></h2>
-          <p class="rv d2">Biomédica acupunturista e fisioterapeuta, especialista em suplementação natural e peptídeos regenerativos. Meu trabalho une a Medicina Tradicional Chinesa com o que há de mais atual em estética regenerativa.</p>
-          <p class="rv d2">Trazer esse cuidado para perto, aqui no Alto da Conquista, era um desejo antigo.</p>
-          <p class="creds-linha rv d3">CRBM 17430 · CREFITO 442290-F</p>
-          <a href="#agendar" class="btn btn-verde rv d3" style="margin-top:26px">Agendar avaliação</a>
+      <div class="cab-linha">
+        <div>
+          <p class="eyebrow rv">Protocolos em destaque</p>
+          <h2 class="rv d1">Cuidados que <em>regeneram</em></h2>
         </div>
-        <div class="quem-ramo" aria-hidden="true">
-          <svg viewBox="0 0 120 220" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 215C40 160 60 110 100 10"/><path d="M38 170c-14-6-22-18-22-30 12 4 20 14 22 30zM48 140c14-4 24-14 26-28-13 3-23 13-26 28zM58 112c-13-7-19-19-18-31 11 5 17 16 18 31zM70 84c13-5 21-16 22-29-12 4-20 15-22 29zM80 58c-11-8-15-20-12-31 10 7 14 18 12 31z"/></svg>
-          <p>“Saúde, equilíbrio<br>e bem-estar.”</p>
-        </div>
+        <a href="#agendar" class="link-seta rv d2">Agendar avaliação <span>→</span></a>
+      </div>
+      <div class="dest-grade">
+        <a href="#agendar" class="dest rv"><div class="dest-img"><img src="assets/dest-exossomos.jpg" alt="Ampolas de sérum sobre pedra clara" loading="lazy"></div><div class="dest-txt"><div><h3>Exossomos e peptídeos</h3><p>Regeneração e firmeza da pele</p></div><span class="seta">→</span></div></a>
+        <a href="#agendar" class="dest rv d1"><div class="dest-img"><img src="assets/dest-injetavel.jpg" alt="Frascos de vitaminas e ampolas" loading="lazy"></div><div class="dest-txt"><div><h3>Suplementação injetável</h3><p>Nutrientes direto onde o corpo precisa</p></div><span class="seta">→</span></div></a>
+        <a href="#agendar" class="dest rv d2"><div class="dest-img"><img src="assets/dest-ventosa.jpg" alt="Ventosas de vidro e agulhas de acupuntura" loading="lazy"></div><div class="dest-txt"><div><h3>Ventosaterapia e moxa</h3><p>Técnicas milenares da MTC</p></div><span class="seta">→</span></div></a>
       </div>
     </div>
   </section>
 
-  <section id="como-funciona" class="passos-sec">
+  <section class="faixa-frase">
+    <div class="ff-txt">
+      <p class="ff-aspa rv">“</p>
+      <p class="ff-frase rv d1">O envelhecimento não começa na ruga. Ele começa por dentro.</p>
+      <p class="ff-autor rv d2">Dra. Ana Karla Branco</p>
+    </div>
+    <div class="ff-img"><img src="assets/faixa-ritual.jpg" alt="" loading="lazy"></div>
+  </section>
+
+  <section class="sobre2" id="sobre">
+    <div class="wrap">
+      <div class="s2-foto rv">
+        <div class="s2-contorno"></div>
+        <div class="s2-quadro"><img src="assets/capa.jpg" alt="Dra. Ana Karla Branco" loading="lazy"></div>
+        <div class="s2-selo"><b>Biomédica Acupunturista</b>e Fisioterapeuta</div>
+      </div>
+      <div class="s2-txt">
+        <p class="eyebrow rv">Sobre</p>
+        <h2 class="rv d1">Oi, eu sou a <em>Ana Karla.</em></h2>
+        <p class="rv d2">Sou biomédica acupunturista e fisioterapeuta, especialista em suplementação natural e peptídeos regenerativos. Meu trabalho une a Medicina Tradicional Chinesa com o que há de mais atual em estética regenerativa.</p>
+        <p class="rv d2">Trazer esse cuidado para perto, aqui no Alto da Conquista, era um desejo antigo. Cada atendimento é pensado para tratar a causa, com calma e atenção.</p>
+        <div class="creds rv d3"><span>CRBM 17430</span><span>CREFITO 442290-F</span><span>Parceira oficial Beauty Derm</span><span>Comunidade EXOS</span></div>
+        <p class="assin rv d3">Ana Karla Branco</p>
+      </div>
+    </div>
+  </section>
+
+<section id="como-funciona" class="passos-sec">
     <div class="wrap">
       <div class="centro">
         <p class="eyebrow rv">Como funciona</p>
@@ -474,6 +557,22 @@ footer .wrap{position:relative;padding:90px 0 30px}
         <div class="rv"><span>01</span><h3>Avaliação</h3><p>Conversa sobre rotina, histórico, queixas e objetivos.</p></div>
         <div class="rv d1"><span>02</span><h3>Protocolo</h3><p>Um plano só seu, que pode unir os três atendimentos.</p></div>
         <div class="rv d2"><span>03</span><h3>Acompanhamento</h3><p>Retornos para ajustar conforme o corpo responde.</p></div>
+      </div>
+    </div>
+  </section>
+
+<section class="galeria">
+    <div class="wrap gal-grade">
+      <div class="gal-cab">
+        <p class="eyebrow rv">Um cuidado sem pressa</p>
+        <h2 class="rv d1">Momentos de <em>equilíbrio</em></h2>
+        <span class="gal-linha rv d2"></span>
+      </div>
+      <div class="gal-fotos">
+        <div class="rv"><img src="assets/gal-1.jpg" alt="" loading="lazy"></div>
+        <div class="rv d1"><img src="assets/gal-2.jpg" alt="" loading="lazy"></div>
+        <div class="rv d2"><img src="assets/gal-3.jpg" alt="" loading="lazy"></div>
+        <div class="rv d3"><img src="assets/gal-4.jpg" alt="" loading="lazy"></div>
       </div>
     </div>
   </section>
